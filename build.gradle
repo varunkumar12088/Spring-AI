@@ -26,6 +26,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	//implementation 'org.springframework.ai:spring-ai-starter-model-bedrock'
 	implementation 'org.springframework.ai:spring-ai-starter-model-ollama'
+	implementation 'org.apache.commons:commons-lang3:3.14.0'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

@@ -1,5 +1,6 @@
 package com.learning.ai.service.impl;
 
+import com.learning.ai.service.ChatMessageService;
 import com.learning.ai.service.ChatService1;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.prompt.Prompt;
@@ -22,6 +23,9 @@ public class GptChatServiceImpl implements ChatService1 {
     @Autowired
     @Qualifier("gpt-oss-java")
     private ChatClient javaCodingClient;
+
+    @Autowired
+    private ChatMessageService chatMessageService;
 
     @Override
     public String chat(String query) {
